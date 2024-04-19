@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.xiaopeng.xui.widget.XLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="48dp" android:layout_marginRight="48dp">
+        <com.xiaopeng.xui.widget.XImageView android:id="@+id/exo_play_pause" android:layout_width="48dp" android:layout_height="48dp"/>
+        <com.xiaopeng.xui.widget.XTextView android:textSize="36sp" android:textColor="#ffffffff" android:id="@+id/exo_position" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@string/x_font_typeface_number_bold" android:layout_marginStart="40dp"/>
+        <com.google.android.exoplayer2.ui.DefaultTimeBar android:id="@+id/exo_progress" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="40dp" app:bar_gravity="center" app:bar_height="8dp" app:buffered_color="#5c3b99ff" app:played_color="#3b99ff" app:scrubber_drawable="@drawable/exo_scrubber_rect" app:touch_target_height="60dp" app:unplayed_color="@color/x_color_bg_light"/>
+        <com.xiaopeng.xui.widget.XTextView android:textSize="36sp" android:textColor="#ffffffff" android:id="@+id/exo_duration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@string/x_font_typeface_number_bold" android:layout_marginStart="40dp" android:layout_marginEnd="36dp"/>
+    </com.xiaopeng.xui.widget.XLinearLayout>
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1600" android:versionName="V1.6.0_20230928152821_Release" android:compileSdkVersion="28" android:compileSdkVersionCodename="9" package="com.xiaopeng.wirelessprojection" platformBuildVersionCode="28" platformBuildVersionName="9">
+    <uses-sdk android:minSdkVersion="28" android:targetSdkVersion="31"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.OVERRIDE_WIFI_CONFIG"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.TETHER_PRIVILEGED"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="com.xpeng.permission.ACCESS_AIRPLAY"/>
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.car.permission.CAR_VENDOR_EXTENSION"/>
+    <uses-permission android:name="android.car.permission.CAR_EXTERIOR_LIGHTS"/>
+    <uses-permission android:name="android.car.permission.CONTROL_CAR_EXTERIOR_LIGHTS"/>
+    <uses-permission android:name="com.xiaopeng.permission.CAR_SERVICE"/>
+    <uses-permission android:name="android.car.permission.CAR_INFO"/>
+    <uses-permission android:name="com.xiaopeng.vuisceneprovider.scene.read"/>
+    <uses-permission android:name="com.xiaopeng.vuisceneprovider.scene.write"/>
+    <application android:theme="@style/AppTheme" android:label="@string/app_name" android:icon="@drawable/ic_projection_app" android:name="com.xiaopeng.wirelessprojection.ProjectionApp" android:sharedUserId="android.uid.system" android:allowBackup="false" android:supportsRtl="true" android:extractNativeLibs="false" android:usesCleartextTraffic="true" android:appComponentFactory="androidx.core.app.CoreComponentFactory">
+        <meta-data android:name="SPEECH_OBSERVER" android:value="com.xiaopeng.wirelessprojection.IpcRouterService"/>
+        <meta-data android:name="SPEECH_EVENTS" android:value="wireless.app.driver.support.open"/>
+        <activity android:theme="@style/XuiAppTheme.TransparentTheme" android:icon="@drawable/ic_projection_app" android:name="com.xiaopeng.wirelessprojection.home.HomeActivity" android:exported="true" android:launchMode="singleTop" android:configChanges="fontScale|screenSize|orientation|keyboardHidden|keyboard|touchscreen|locale|mnc|mcc" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/XuiAppTheme.Fullscreen" android:name="com.xiaopeng.wirelessprojection.dmr.RendererActivity" android:exported="false" android:launchMode="singleTask" android:configChanges="screenSize|keyboard" android:resizeableActivity="true">
+            <intent-filter>
+                <action android:name="com.xiaopeng.wirelessprojection.OPEN_VIDEO_PAGE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <meta-data android:name="com.xiaopeng.metadata.activity.flags" android:value="64"/>
+            <meta-data android:name="com.xiaopeng.metadata.task.areas" android:value="primary|immersion|logical"/>
+            <meta-data android:name="com.xiaopeng.metadata.activity.system.ui.flags" android:value="0x4"/>
+        </activity>
+        <receiver android:name="com.xiaopeng.wirelessprojection.core.receiver.DebugMessageReceiver" android:exported="false">
+            <intent-filter>
+                <action android:name="wirelessprojection.ACTION_TEST_PLAY"/>
+            </intent-filter>
+        </receiver>
+        <provider android:name="com.xiaopeng.lib.apirouter.server.ApiPublisherProvider" android:exported="true" android:authorities="com.xiaopeng.wirelessprojection.api.publisher"/>
+    </application>
+</manifest>

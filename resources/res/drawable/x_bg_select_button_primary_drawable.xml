@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<drawable xmlns:android="http://schemas.android.com/apk/res/android" android:duration="100" android:color="@color/x_select_btn_primary_color_selector" android:radius="@dimen/x_common_radius3" class="com.xiaopeng.xui.drawable.XStateGradientDrawable"/>

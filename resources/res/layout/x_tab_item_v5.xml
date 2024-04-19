@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiaopeng.xui.widget.XTextView xmlns:android="http://schemas.android.com/apk/res/android" android:textColor="@color/x_color_tab_text" android:id="@+id/x_tab_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="0dp" android:layout_marginRight="0dp" android:text="1111" android:maxLines="1" style="@style/XFont.Title2"/>

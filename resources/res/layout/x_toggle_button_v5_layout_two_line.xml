@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.xiaopeng.xui.widget.XImageView android:id="@+id/toggle_ic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/toggle_ic" android:layout_centerVertical="true" android:layout_marginStart="32dp" android:layout_alignParentStart="true">
+        <com.xiaopeng.xui.widget.XCheckedTextView android:textSize="@dimen/x_font_body_01_size" android:textColor="@color/x_toggle_v5_text_color" android:ellipsize="end" android:id="@+id/toggle_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+        <com.xiaopeng.xui.widget.XCheckedTextView android:textSize="@dimen/x_font_body_03_size" android:textColor="@color/x_color_text_3" android:ellipsize="end" android:id="@+id/toggle_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:singleLine="true"/>
+        <com.xiaopeng.xui.view.XView android:id="@+id/toggle_indicator" android:background="@drawable/x_toggle_indicator_drawable" android:layout_width="32dp" android:layout_height="8dp" android:layout_marginTop="8dp"/>
+    </LinearLayout>
+</merge>

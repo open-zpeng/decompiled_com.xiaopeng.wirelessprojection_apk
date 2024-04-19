@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:gravity="start|center_vertical" android:id="@android:id/background">
+        <drawable android:height="14dp" android:color="@color/x_color_bg_light" android:radius="8dp" android:valueFrom="14dp" android:valueTo="32dp" class="com.xiaopeng.xui.drawable.XPressableRoundRectDrawable"/>
+    </item>
+    <item android:gravity="start|center_vertical" android:id="@android:id/progress">
+        <drawable app:radius_x="8dp" app:radius_y="8dp" class="xiaopeng.widget.ClipDrawable">
+            <drawable android:height="14dp" android:color="@color/x_color_primary" android:radius="8dp" android:valueFrom="14dp" android:valueTo="32dp" class="com.xiaopeng.xui.drawable.XPressableRoundRectDrawable"/>
+        </drawable>
+    </item>
+    <item android:gravity="start|center_vertical" android:id="@android:id/secondaryProgress">
+        <drawable app:radius_x="8dp" app:radius_y="8dp" class="xiaopeng.widget.ClipDrawable">
+            <drawable android:height="14dp" android:color="@color/x_color_seekbar_second_progress" android:radius="8dp" android:valueFrom="14dp" android:valueTo="32dp" class="com.xiaopeng.xui.drawable.XPressableRoundRectDrawable"/>
+        </drawable>
+    </item>
+</layer-list>

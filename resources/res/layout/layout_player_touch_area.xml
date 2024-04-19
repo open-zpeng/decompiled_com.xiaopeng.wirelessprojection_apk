@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiaopeng.xui.widget.XRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/layoutTouchPanel" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="280dp" android:layout_marginBottom="280dp">
+    <com.xiaopeng.xui.widget.XFrameLayout android:id="@+id/llAdjustIndicatorWrapper" android:visibility="invisible" android:layout_width="1200dp" android:layout_height="80dp" android:layout_marginTop="60dp" android:layout_alignParentTop="true" android:layout_centerHorizontal="true">
+        <com.xiaopeng.xui.widget.XProgressBar android:id="@+id/adjustProgressBar" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/lib_media_playerPlayerAdjustProgressBar"/>
+        <com.xiaopeng.xui.widget.XImageView android:layout_gravity="center_vertical" android:id="@+id/adjustIcon" android:layout_width="56dp" android:layout_height="56dp" android:src="@drawable/icon_video_player_light" android:layout_marginStart="18dp"/>
+    </com.xiaopeng.xui.widget.XFrameLayout>
+</com.xiaopeng.xui.widget.XRelativeLayout>

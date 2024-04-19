@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" android:tint="@color/x_color_icon" android:height="48dp" android:width="48dp" android:tintMode="src_in" android:viewportWidth="48" android:viewportHeight="48">
+    <path android:fillColor="#1a1d26" android:pathData="m8,43c-1.6568,0 -3,-1.3431 -3,-3v-32c0,-1.6568 1.3432,-3 3,-3h32c1.6569,0 3,1.3432 3,3v32c0,1.6569 -1.3431,3 -3,3zM9,39h30v-30h-30z" android:fillType="evenOdd"/>
+    <path android:fillColor="#1a1d26" android:pathData="M15.5,15L32.5,15A1,1 0,0 1,33.5 16L33.5,18A1,1 0,0 1,32.5 19L15.5,19A1,1 0,0 1,14.5 18L14.5,16A1,1 0,0 1,15.5 15z"/>
+</vector>

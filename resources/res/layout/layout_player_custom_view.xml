@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiaopeng.xui.widget.XFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.exoplayer2.ui.AspectRatioFrameLayout android:layout_gravity="center" android:id="@+id/exo_content_frame" android:layout_width="match_parent" android:layout_height="match_parent">
+        <View android:id="@+id/exo_shutter" android:background="@android:color/black" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </com.google.android.exoplayer2.ui.AspectRatioFrameLayout>
+    <com.xiaopeng.xui.widget.XRelativeLayout android:id="@+id/iv_audio_cover" android:background="@color/audio_default_color" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.xiaopeng.xui.widget.XImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bg_audio_default" android:layout_centerHorizontal="true"/>
+    </com.xiaopeng.xui.widget.XRelativeLayout>
+    <com.xiaopeng.xui.widget.XRelativeLayout android:layout_gravity="bottom" android:background="@drawable/bg_video_controller" android:layout_width="match_parent" android:layout_height="400dp">
+        <com.google.android.exoplayer2.ui.StyledPlayerControlView android:orientation="vertical" android:id="@+id/exo_controller" android:layout_width="match_parent" android:layout_height="120dp" android:layout_marginBottom="70dp" android:layout_alignParentBottom="true" android:layoutDirection="ltr" app:controller_layout_id="@layout/layout_player_controller_custom_view"/>
+    </com.xiaopeng.xui.widget.XRelativeLayout>
+</com.xiaopeng.xui.widget.XFrameLayout>

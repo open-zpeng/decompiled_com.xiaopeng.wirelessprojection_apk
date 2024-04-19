@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.xiaopeng.xui.widget.XImageView android:id="@+id/x_button_image_right" android:visibility="gone" android:layout_width="220dp" android:layout_height="match_parent" app:layout_constraintRight_toRightOf="0" app:vuiMode="DISABLED"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/x_text_content" android:layout_width="0dp" android:layout_height="0dp" android:layout_marginLeft="36dp" android:layout_marginTop="24dp" android:layout_marginRight="36dp" android:layout_marginBottom="24dp" app:layout_constraintBottom_toTopOf="@+id/x_bottom_space" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toLeftOf="@+id/x_button_image_right" app:layout_constraintTop_toTopOf="0">
+        <com.xiaopeng.xui.widget.XImageView android:id="@+id/x_text_image" android:visibility="gone" android:layout_width="48dp" android:layout_height="48dp" android:scaleType="fitXY" app:vuiMode="DISABLED"/>
+        <Space android:id="@+id/x_space_drawable_padding" android:visibility="gone" android:layout_width="16dp" android:layout_height="16dp"/>
+        <LinearLayout android:gravity="left" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.xiaopeng.xui.widget.XTextView android:textColor="@color/x_color_text_2" android:ellipsize="end" android:id="@+id/x_button_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" app:vuiMode="DISABLED" style="@style/XFont.Body1"/>
+            <com.xiaopeng.xui.widget.XTextView android:textColor="@color/x_color_text_3" android:ellipsize="end" android:id="@+id/x_button_text_sub" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" app:vuiMode="DISABLED" style="@style/XFont.Body3"/>
+            <View android:id="@+id/x_space" android:visibility="gone" android:layout_width="32dp" android:layout_height="8dp" android:layout_marginTop="12dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@+id/x_bottom_space" android:layout_width="32dp" android:layout_height="8dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0"/>
+    <com.xiaopeng.xui.widget.XImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_marginRight="16dp" android:src="@drawable/x_ic_subscript" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0"/>
+</merge>

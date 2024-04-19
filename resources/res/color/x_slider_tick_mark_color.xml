@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false" android:state_selected="false" android:color="@color/x_slider_tick_mark_deselected_disabled"/>
+    <item android:state_enabled="true" android:state_selected="false" android:color="@color/x_slider_tick_mark_deselected_enabled"/>
+    <item android:state_enabled="false" android:state_selected="true" android:color="@color/x_slider_tick_mark_selected_disabled"/>
+    <item android:state_enabled="true" android:state_selected="true" android:color="@color/x_slider_tick_mark_selected_enabled"/>
+</selector>

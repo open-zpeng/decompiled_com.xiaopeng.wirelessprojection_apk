@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<drawable xmlns:app="http://schemas.android.com/apk/res-auto" app:loading_color="@color/video_loading_color" app:loading_type="xlarge" class="com.xiaopeng.xui.drawable.XLoadingDrawable"/>

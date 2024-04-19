@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:gravity="start|center_vertical" android:id="@android:id/background" android:drawable="@drawable/simple_seekbar_track_bg"/>
+    <item android:gravity="start|center_vertical" android:id="@android:id/secondaryProgress">
+        <drawable app:radius_x="8dp" app:radius_y="8dp" class="xiaopeng.widget.ClipDrawable">
+            <shape>
+                <corners android:radius="8dp"/>
+                <solid android:color="#1a00b277"/>
+                <size android:height="14dp"/>
+            </shape>
+        </drawable>
+    </item>
+    <item android:gravity="start|center_vertical" android:id="@android:id/progress">
+        <drawable app:radius_x="8dp" app:radius_y="8dp" class="xiaopeng.widget.ClipDrawable">
+            <shape>
+                <corners android:radius="8dp"/>
+                <solid android:color="#00b277"/>
+                <size android:height="14dp"/>
+            </shape>
+        </drawable>
+    </item>
+</layer-list>

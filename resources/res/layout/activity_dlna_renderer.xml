@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiaopeng.xui.widget.XFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/xfl_renderer_main" android:tag="layout/activity_dlna_renderer_0" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.xiaopeng.xui.widget.XFrameLayout android:id="@+id/fl_content_video" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.xiaopeng.xui.widget.XFrameLayout android:id="@+id/fl_fragment_video_parent" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <com.xiaopeng.wirelessprojection.dmr.view.AutoScaleSurfaceView android:layout_gravity="center" android:id="@+id/sv_mirror" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </com.xiaopeng.xui.widget.XFrameLayout>
+    <com.xiaopeng.xui.widget.XRelativeLayout android:id="@+id/iv_audio_cover" android:background="@color/audio_default_color" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.xiaopeng.xui.widget.XImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bg_audio_default" android:layout_centerHorizontal="true"/>
+    </com.xiaopeng.xui.widget.XRelativeLayout>
+    <com.xiaopeng.xui.view.XView android:id="@+id/xv_touch_area" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="200dp" android:layout_marginBottom="280dp"/>
+    <com.xiaopeng.xui.widget.XFrameLayout android:id="@+id/fl_title_layout" android:background="@drawable/bg_video_title" android:layout_width="match_parent" android:layout_height="400dp">
+        <com.xiaopeng.xui.widget.XTextView android:textSize="36sp" android:textColor="#ffffffff" android:ellipsize="marquee" android:gravity="center_vertical" android:id="@+id/tv_video_title" android:layout_width="wrap_content" android:layout_height="62dp" android:layout_marginTop="33dp" android:singleLine="true" android:layout_marginStart="112dp" android:layout_marginEnd="20dp"/>
+    </com.xiaopeng.xui.widget.XFrameLayout>
+    <com.xiaopeng.xui.widget.XRelativeLayout android:id="@+id/ib_btn_back" android:layout_width="56dp" android:layout_height="56dp" android:layout_marginTop="37dp" android:layout_marginStart="55dp">
+        <com.xiaopeng.xui.view.XView android:background="@drawable/ic_btn_back" android:layout_width="20dp" android:layout_height="34dp" android:layout_centerInParent="true"/>
+    </com.xiaopeng.xui.widget.XRelativeLayout>
+    <com.xiaopeng.xui.widget.XRelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.xiaopeng.xui.widget.XFrameLayout android:id="@+id/llAdjustIndicatorWrapper" android:visibility="invisible" android:layout_width="640dp" android:layout_height="80dp" android:layout_marginTop="48dp" android:layout_alignParentTop="true" android:layout_centerHorizontal="true">
+            <com.xiaopeng.xui.widget.XProgressBar android:id="@+id/adjustProgressBar" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/lib_media_playerPlayerAdjustProgressBar"/>
+            <com.xiaopeng.xui.widget.XImageView android:layout_gravity="center_vertical" android:id="@+id/adjustIcon" android:layout_width="56dp" android:layout_height="56dp" android:src="@drawable/icon_video_player_light" android:layout_marginStart="18dp"/>
+        </com.xiaopeng.xui.widget.XFrameLayout>
+    </com.xiaopeng.xui.widget.XRelativeLayout>
+    <com.xiaopeng.xui.widget.XConstraintLayout android:id="@+id/video_layout_loading" android:background="@color/video_loading_bg_color" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.xiaopeng.xui.widget.XLinearLayout android:orientation="vertical" android:id="@+id/video_loading" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+            <com.xiaopeng.xui.view.XView android:layout_gravity="center_horizontal" android:background="@drawable/loading_custom_color" android:layout_width="260dp" android:layout_height="260dp"/>
+            <com.xiaopeng.xui.widget.XTextView android:textSize="52sp" android:textColor="@color/video_loading_color" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="38dp" android:text="@string/loading_text"/>
+        </com.xiaopeng.xui.widget.XLinearLayout>
+    </com.xiaopeng.xui.widget.XConstraintLayout>
+</com.xiaopeng.xui.widget.XFrameLayout>
